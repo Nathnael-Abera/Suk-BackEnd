@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const connectDatabase = () => {
   mongoose
@@ -6,8 +8,8 @@ const connectDatabase = () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
-    .then((result) => {
-      console.log("Connected to database");
+    .then((data) => {
+      console.log(`Connected to database with server ${data.connection.host}`);
     });
 };
 module.exports = connectDatabase;

@@ -1,0 +1,19 @@
+//user create req   
+POST http://localhost:3000/api/user/create-user
+Content-Type: application/json
+
+{
+    "name":"nati",
+    "email":"email@gmail.com",
+    "password":"12345678",
+    "avatar":"12rwdfd"
+}
+###
+//test get
+GET http://localhost:3000
+###
+
+
+
+
+
